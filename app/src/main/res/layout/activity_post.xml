@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".PostActivity">
+
+
+  <ImageView
+      android:id="@+id/selectImgBtn"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#fff"
+      android:src="@drawable/add_btn"
+      android:scaleType="centerCrop"
+      android:adjustViewBounds="true"
+      android:layout_centerHorizontal="true"
+      android:layout_alignParentTop="true"
+      />
+
+  <EditText
+      android:background="@drawable/input_outline"
+      android:layout_below="@+id/selectImgBtn"
+      android:id="@+id/titleField"
+      android:layout_marginTop="10dp"
+      android:padding="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Title.."/>
+
+
+  <EditText
+      android:background="@drawable/input_outline"
+      android:layout_below="@+id/titleField"
+      android:id="@+id/descField"
+      android:layout_marginTop="10dp"
+      android:padding="15dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Description.."/>
+
+
+  <Button
+      android:id="@+id/submitBtnID"
+      android:textColor="#fff"
+      android:background="@drawable/input_outline"
+      android:layout_marginTop="20dp"
+      android:textSize="18sp"
+      android:text="Submit"
+      android:textAllCaps="false"
+      android:backgroundTint="#8228"
+      android:padding="15dp"
+      android:layout_below="@+id/descField"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
